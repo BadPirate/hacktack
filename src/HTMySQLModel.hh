@@ -1,5 +1,5 @@
-<?hh namespace Badpirate\HackTack;
-class Model {
+<?hh
+class Badpirate\HackTack\Model {
   static $db;
 
   static public function init(string $user, string $password, string $db) {
