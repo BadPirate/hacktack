@@ -1,4 +1,6 @@
 <?hh namespace Badpirate\HackTack;
+require_once('vendor/autoload.php');
+require_once('vendor/hh_autoload.php');
 
 final class FormField {
   public function __construct(
