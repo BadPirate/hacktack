@@ -12,5 +12,4 @@ Warning
 
 This library might suck, but I like it.
 
-* Badpirate\HackTack\Template - A bootstrap based HTML template class, subclass to handle form actions and targets.
-BadPirate
+* HTXHP - Some common XHP tags I use
