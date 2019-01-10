@@ -7,7 +7,7 @@ class Badpirate\HackTack\Model {
     if ($mysqli->connect_errno) {
       throw new Exception("Failed to connect to MySQL: (" . $mysqli->connect_errno . ") " . $mysqli->connect_error);
     }
-    Model::$db = $mysqli;
+    Badpirate\HackTack\Model::$db = $mysqli;
   }
 
   static public function dateTime(string $dateTimeString) : DateTime {
@@ -15,15 +15,15 @@ class Badpirate\HackTack\Model {
   }
 
   static public function prepare(string $prep_string) : mysqli_stmt {
-    if (!($stmt = Model::$db->prepare($prep_string)))
+    if (!($stmt = Badpirate\HackTack\Model::$db->prepare($prep_string)))
     {
-      throw new Exception("Prepare failed: (" . Model::$db->errno . ")" . Model::$db->error);
+      throw new Exception("Prepare failed: (" . Badpirate\HackTack\Model::$db->errno . ")" . Badpirate\HackTack\Model::$db->error);
     }
     return $stmt;
   }
 
   static public function affectedRows() : int {
-    return Model::$db->affected_rows;
+    return Badpirate\HackTack\Model::$db->affected_rows;
   }
 
   static public function execute(mysqli_stmt $stmt) {
@@ -33,7 +33,7 @@ class Badpirate\HackTack\Model {
   }
 
   static public function ec(mysqli_stmt $stmt, bool $expect_changes = false) {
-    Model::execute($stmt);
+    Badpirate\HackTack\Model::execute($stmt);
     if ($expect_changes && $stmt->affected_rows == 0) {
       throw new Exception("Expected change, 0 affected rows");
     }
