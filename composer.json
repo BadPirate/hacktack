@@ -1,24 +1,21 @@
 {
-    "name": "buonzz/composer-library-template",
-    "description": "Boilerplate package for creating other packages.",
-    "keywords": ["template", "composer", "package"],
-    "license": "DBAD",
+    "name": "badpirate/hacktack",
+    "description": "Hack (HHVM) Tack (Tools)",
+    "keywords": ["hhvm", "hack", "template", "utility"],
+    "license": "MIT",
     "authors": [
         {
-            "name": "Darwin Biler",
-            "email": "buonzz@gmail.com"
+            "name": "Kevin Lohman",
+            "email": "badpirate@gmail.com"
         }
     ],
     "type": "project",
     "require": {
 		"php": ">=7.1"
     },
-    "require-dev": {
-		"phpunit/phpunit": "6.*"
-    },
     "autoload": {
         "psr-4": {
-            "Buonzz\\Template\\": "src/"
+            "Badpirate\\HackTack\\": "src/"
         }
     }
 }

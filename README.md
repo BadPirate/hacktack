@@ -1,15 +1,16 @@
-Composer Library Template
+Hack Tack
 =========================
 
-If you are trying to create a new PHP Composer library, whether it will be going to submitted to packagist.org or just in your Github account, this template of files will surely help you make the process a lot easier and faster.
+**Hack**:  *A programming language popular at Facebook (and elsewhere) faster than PHP, it's HHVM*
 
-Features
+**Tack**: *A method of dealing with a situation or problem; a course of action or policy.*
+
+**HackTack**: *A collection of tools for making HHVM based websites*
+
+Warning
 --------
 
-* PSR-4 autoloading compliant structure
-* Unit-Testing with PHPUnit
-* Comprehensive Guides and tutorial
-* Easy to use to any framework or even a plain php file
+This library might suck, but I like it.
 
-
-I encourage that you put more information on this readme file instead of leaving it as is. See [How to make a README file](http://www.darwinbiler.com/designing-and-making-the-readme-file-for-your-github-repository/) for more info.
+* Badpirate\HackTack\Template - A bootstrap based HTML template class, subclass to handle form actions and targets.
+BadPirate
