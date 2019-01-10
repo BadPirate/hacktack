@@ -14,3 +14,4 @@ This library might suck, but I like it.
 
 * HTXHP - Some common XHP tags I use
 * HTMySQLModel - use Badpirate\HackTack\Model -- Base model class for mysql object, must init class before using (once)
+* HT - Some static methods that I find regularly useful
