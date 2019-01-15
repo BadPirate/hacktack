@@ -3,7 +3,7 @@ require_once('vendor/autoload.php');
 require_once('vendor/hh_autoload.php');
 
 // A bootstrap head
-final class :head:jstrap extends :x:element {
+class :head:jstrap extends :x:element {
   attribute :head;
   attribute bool reactive = true;
 
